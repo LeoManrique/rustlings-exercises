@@ -22,3 +22,9 @@ z.push(2);
 ```
 
 The order of statements matters: each use of a reference extends its live scope.
+
+---
+
+**References**
+
+[1] The Rust Programming Language — [References and Borrowing](https://doc.rust-lang.org/book/ch04-02-references-and-borrowing.html)

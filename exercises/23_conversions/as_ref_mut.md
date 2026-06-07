@@ -33,3 +33,11 @@ is_hello(s);
 ```
 
 This function accepts both `&str` and `String` because both implement `AsRef<str>`.
+
+---
+
+**References**
+
+[1] The Rust Standard Library — [std::convert::AsRef](https://doc.rust-lang.org/std/convert/trait.AsRef.html)
+
+[2] The Rust Standard Library — [std::convert::AsMut](https://doc.rust-lang.org/std/convert/trait.AsMut.html)

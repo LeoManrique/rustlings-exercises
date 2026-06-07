@@ -18,3 +18,9 @@ fn square(num: i32) -> i32 {
 ```
 
 If you place a semicolon at the end of that final line, you change it from an expression into a statement, the function no longer produces a value, and you get a type-mismatch error against the declared return type.
+
+---
+
+**References**
+
+[1] The Rust Programming Language — [How Functions Work](https://doc.rust-lang.org/book/ch03-03-how-functions-work.html)

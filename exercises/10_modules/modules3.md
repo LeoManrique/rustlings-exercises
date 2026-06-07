@@ -9,3 +9,9 @@ use std::{cmp::Ordering, io};
 ```
 
 This brings both `std::cmp::Ordering` and `std::io` into scope in one line. The same form works for two items that live in the same submodule, letting one `use` statement pull a whole set of names directly into the current scope.
+
+---
+
+**References**
+
+[1] The Rust Programming Language — [Bringing Paths into Scope with the use Keyword](https://doc.rust-lang.org/book/ch07-04-bringing-paths-into-scope-with-the-use-keyword.html)

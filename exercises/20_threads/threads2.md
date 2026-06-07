@@ -25,7 +25,36 @@ before using the value. The call to `lock` returns a `MutexGuard`, which
 implements `Deref` to point at our inner data and has a `Drop` implementation
 that releases the lock automatically when the guard goes out of scope.
 
+```rust
+use std::sync::{Arc, Mutex};
+use std::thread;
+
+let counter = Arc::new(Mutex::new(0));
+let mut handles = vec![];
+
+for _ in 0..10 {
+    let counter = Arc::clone(&counter);
+    let handle = thread::spawn(move || {
+        let mut num = counter.lock().unwrap();
+        *num += 1;
+    });
+    handles.push(handle);
+}
+
+for handle in handles {
+    handle.join().unwrap();
+}
+
+println!("Result: {}", *counter.lock().unwrap());
+```
+
 `Mutex<T>` provides interior mutability: the binding can be immutable but you
 can still get a mutable reference to the value inside it. In the same way
 `RefCell<T>` lets you mutate contents inside an `Rc<T>`, you use `Mutex<T>` to
 mutate contents inside an `Arc<T>`.
+
+---
+
+**References**
+
+[1] The Rust Programming Language — [Shared-State Concurrency](https://doc.rust-lang.org/book/ch16-03-shared-state.html)

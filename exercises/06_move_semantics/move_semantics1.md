@@ -16,3 +16,9 @@ fn takes_ownership(some_string: String) {
 ```
 
 If you try to use a variable after it's been moved into a function, Rust throws a compile-time error. Returning the value from the function moves ownership back out to the caller.
+
+---
+
+**References**
+
+[1] The Rust Programming Language — [What Is Ownership?](https://doc.rust-lang.org/book/ch04-01-what-is-ownership.html)

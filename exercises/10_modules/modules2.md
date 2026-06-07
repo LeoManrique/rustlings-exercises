@@ -10,3 +10,9 @@ use std::io::Result as IoResult;
 ```
 
 Within a module, relative paths can start with `self` to refer to the current module, so an alias like `use self::child::ITEM as NEW_NAME;` rebinds a child-module item under a new name in the current scope.
+
+---
+
+**References**
+
+[1] The Rust Programming Language — [Bringing Paths into Scope with the use Keyword](https://doc.rust-lang.org/book/ch07-04-bringing-paths-into-scope-with-the-use-keyword.html)

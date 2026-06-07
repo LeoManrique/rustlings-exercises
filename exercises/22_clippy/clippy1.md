@@ -10,3 +10,21 @@ library is more precise than what people come up with."
 
 Replace approximate literals with their corresponding standard library
 constants to improve both accuracy and code clarity.
+
+Clippy flags:
+
+```rust
+let pi = 3.14159265358979f64;
+```
+
+and suggests:
+
+```rust
+let pi = std::f64::consts::PI;
+```
+
+---
+
+**References**
+
+[1] rust-clippy — [GitHub repository](https://github.com/rust-lang/rust-clippy)

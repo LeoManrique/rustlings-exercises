@@ -7,3 +7,23 @@
 Not all primitive types are atomic because thread safety comes with a performance penalty that you only want to pay when necessary. If you're performing operations on values within a single thread, your code can run faster if it doesn't have to enforce the guarantees atomics provide.
 
 `Arc<T>` and `Rc<T>` have the same API, so you fix a multi-threaded program by changing the `use` line, the call to `new`, and the call to `clone`.
+
+```rust
+use std::sync::Arc;
+use std::thread;
+
+let numbers = Arc::new(vec![1, 2, 3]);
+let child = Arc::clone(&numbers);
+
+let handle = thread::spawn(move || {
+    println!("{:?}", child);
+});
+
+handle.join().unwrap();
+```
+
+---
+
+**References**
+
+[1] The Rust Programming Language — [Shared-State Concurrency](https://doc.rust-lang.org/book/ch16-03-shared-state.html)

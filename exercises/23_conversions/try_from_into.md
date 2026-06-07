@@ -30,3 +30,9 @@ assert!(try_smaller_number.is_err());
 let try_successful_smaller_number = i32::try_from(3);
 assert!(try_successful_smaller_number.is_ok());
 ```
+
+---
+
+**References**
+
+[1] The Rust Standard Library — [std::convert::TryFrom](https://doc.rust-lang.org/std/convert/trait.TryFrom.html)

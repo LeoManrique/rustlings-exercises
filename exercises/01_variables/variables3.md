@@ -9,3 +9,9 @@ let x: i32;
 introduces `x` with type `i32`, but `x` is still uninitialized. Reading from an uninitialized variable is a compile-time error — the binding must have a value before it can be used.
 
 You can assign the value later, as long as it happens before the first read.
+
+---
+
+**References**
+
+[1] The Rust Programming Language — [Variables and Mutability](https://doc.rust-lang.org/book/ch03-01-variables-and-mutability.html)

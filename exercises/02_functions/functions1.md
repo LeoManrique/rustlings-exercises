@@ -11,3 +11,9 @@ fn call_me() {
 Rust code uses _snake case_ as the conventional style for function names: all letters lowercase, with underscores separating words.
 
 You can call any function you've defined by entering its name followed by a set of parentheses. Rust doesn't care where you define your functions, only that they're defined somewhere in a scope that can be seen by the caller.
+
+---
+
+**References**
+
+[1] The Rust Programming Language — [How Functions Work](https://doc.rust-lang.org/book/ch03-03-how-functions-work.html)

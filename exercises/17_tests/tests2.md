@@ -11,3 +11,9 @@ assertion `left == right` failed
 ```
 
 The `assert_eq!` and `assert_ne!` macros use the operators `==` and `!=`, respectively, and require that the values being compared implement the `PartialEq` and `Debug` traits. You can derive these traits on custom structs and enums with `#[derive(PartialEq, Debug)]`.
+
+---
+
+**References**
+
+[1] The Rust Programming Language — [How to Write Tests](https://doc.rust-lang.org/book/ch11-01-writing-tests.html)

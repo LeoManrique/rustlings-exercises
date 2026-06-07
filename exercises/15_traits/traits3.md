@@ -22,4 +22,8 @@ You can still call the method on instances as normal, and the default body runs.
 
 Default implementations can call other methods in the same trait, even if those methods don't have a default implementation. Note: you cannot call the default implementation from an overriding implementation of the same method.
 
-Source: <https://doc.rust-lang.org/book/ch10-02-traits.html>
+---
+
+**References**
+
+[1] The Rust Programming Language — [Traits: Defining Shared Behavior](https://doc.rust-lang.org/book/ch10-02-traits.html)

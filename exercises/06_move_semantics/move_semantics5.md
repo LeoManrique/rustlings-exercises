@@ -22,3 +22,9 @@ fn consume(mut data: String) {
 ```
 
 At the call site, an owned argument is passed as-is; a borrow is created with `&` (or `&mut`). The choice between `&T` and `T` is made on each parameter independently.
+
+---
+
+**References**
+
+[1] The Rust Programming Language — [References and Borrowing](https://doc.rust-lang.org/book/ch04-02-references-and-borrowing.html)

@@ -13,3 +13,9 @@ fn call_me(num: i32) {
 This is a deliberate decision in Rust's design: requiring type annotations in function definitions means the compiler almost never needs you to use them elsewhere in the code to figure out what type you mean. The compiler is also able to give more-helpful error messages if it knows what types the function expects.
 
 When defining multiple parameters, separate the parameter declarations with commas.
+
+---
+
+**References**
+
+[1] The Rust Programming Language — [How Functions Work](https://doc.rust-lang.org/book/ch03-03-how-functions-work.html)

@@ -31,3 +31,9 @@ Because `From` is implemented, the reciprocal `Into` is available as well:
 ```rust
 let s: String = "hello".into();
 ```
+
+---
+
+**References**
+
+[1] The Rust Standard Library — [std::convert::From](https://doc.rust-lang.org/std/convert/trait.From.html)

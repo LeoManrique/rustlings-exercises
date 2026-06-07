@@ -21,3 +21,9 @@ fn main() {
 Unlike macros in C and other languages, Rust macros are expanded into
 abstract syntax trees, rather than string preprocessing, so you don't get
 unexpected precedence bugs.
+
+---
+
+**References**
+
+[1] Rust by Example — [macro_rules!](https://doc.rust-lang.org/rust-by-example/macros.html)

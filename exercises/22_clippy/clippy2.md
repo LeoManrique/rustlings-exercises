@@ -14,3 +14,27 @@ The "intended" use of `IntoIterator` implementations for `Option` and `Result`
 is passing them to generic code that expects something implementing
 `IntoIterator`. For example using `.chain(option)` to optionally add a value
 to an iterator.
+
+Clippy flags:
+
+```rust
+let opt: Option<i32> = Some(42);
+for val in opt {
+    println!("{val}");
+}
+```
+
+and suggests:
+
+```rust
+let opt: Option<i32> = Some(42);
+if let Some(val) = opt {
+    println!("{val}");
+}
+```
+
+---
+
+**References**
+
+[1] rust-clippy — [GitHub repository](https://github.com/rust-lang/rust-clippy)

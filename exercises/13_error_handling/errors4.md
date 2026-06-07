@@ -21,3 +21,9 @@ enum CreationError {
 ```
 
 A method that constructs a value can then return `Result<Self, CreationError>`, with one `Err` variant per distinct failure mode — letting callers `match` on exactly what went wrong instead of inspecting a string or guessing from `None`.
+
+---
+
+**References**
+
+[1] The Rust Programming Language — [Generic Data Types](https://doc.rust-lang.org/book/ch10-01-syntax.html)

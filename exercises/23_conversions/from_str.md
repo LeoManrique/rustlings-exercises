@@ -35,3 +35,9 @@ Point::from_str("(1,2)")
 "(1,2)".parse()
 "(1,2)".parse::<Point>()
 ```
+
+---
+
+**References**
+
+[1] The Rust Standard Library — [std::str::FromStr](https://doc.rust-lang.org/std/str/trait.FromStr.html)

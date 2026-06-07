@@ -10,3 +10,9 @@ A `Range` such as `1..=n` is itself an iterator, so these reducers can be applie
 let total: u64 = (1..=5).sum();      // 15
 let factorial: u64 = (1..=5).product(); // 120
 ```
+
+---
+
+**References**
+
+[1] The Rust Programming Language — [Processing a Series of Items with Iterators](https://doc.rust-lang.org/book/ch13-02-iterators.html)

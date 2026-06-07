@@ -12,3 +12,9 @@ if let Some(m) = &msg {
 ```
 
 The key distinction: using `&` in pattern matching allows you to borrow the contained value without consuming the `Option`, while matching directly on the value moves it out. The same technique applies to `match` arms when the binding needs to remain usable after the match.
+
+---
+
+**References**
+
+[1] The Rust Standard Library — [std::option::Option](https://doc.rust-lang.org/std/option/enum.Option.html)

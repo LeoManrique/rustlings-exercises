@@ -19,3 +19,9 @@ assert_eq!(v2, vec![2, 3, 4]);
 You can chain multiple calls to iterator adapters to perform complex actions in a readable way. Because all iterators are lazy, you must call one of the consuming adapter methods to get results.
 
 `collect` is generic over the collection it returns, so it can build different types — for example, a `Vec<String>`, or a `String` by gathering characters or pieces.
+
+---
+
+**References**
+
+[1] The Rust Programming Language — [Processing a Series of Items with Iterators](https://doc.rust-lang.org/book/ch13-02-iterators.html)

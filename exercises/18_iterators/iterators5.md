@@ -13,3 +13,9 @@ Here the closure captures `shoe_size` from its environment and uses it to filter
 Once filtered, a consuming adapter like `count` (which calls `next` until exhaustion and returns how many items it saw) reduces the result to a single number.
 
 When the source is a sequence of sequences (for example, a slice of maps, each yielding its own values iterator), `flat_map` turns each outer item into an inner iterator and concatenates them into one flat stream. Equivalently, `map(...).flatten()` produces the same effect. This lets a single chain of adapters traverse a nested structure without an outer loop.
+
+---
+
+**References**
+
+[1] The Rust Programming Language — [Processing a Series of Items with Iterators](https://doc.rust-lang.org/book/ch13-02-iterators.html)

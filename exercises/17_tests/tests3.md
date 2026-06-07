@@ -13,3 +13,9 @@ fn greater_than_100() {
 ```
 
 The test runner verifies that the panic message contains the provided substring. This ensures the code panics for the specific reason you expect.
+
+---
+
+**References**
+
+[1] The Rust Programming Language — [How to Write Tests](https://doc.rust-lang.org/book/ch11-01-writing-tests.html)

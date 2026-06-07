@@ -32,3 +32,9 @@ let s = format!("{s1}-{s2}-{s3}");
 
 `format!` works like `println!` but returns a `String` and doesn't take
 ownership of its parameters.
+
+---
+
+**References**
+
+[1] The Rust Programming Language — [Storing UTF-8 Encoded Text with Strings](https://doc.rust-lang.org/book/ch08-02-strings.html)

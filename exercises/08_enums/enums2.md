@@ -22,4 +22,8 @@ Defining an enum with variants such as these is similar to defining different ki
 
 Just as we're able to define methods on structs using `impl`, we're also able to define methods on enums. The body of the method would use `self` to get the value that we called the method on.
 
-Source: <https://doc.rust-lang.org/book/ch06-01-defining-an-enum.html>
+---
+
+**References**
+
+[1] The Rust Programming Language — [Defining an Enum](https://doc.rust-lang.org/book/ch06-01-defining-an-enum.html)

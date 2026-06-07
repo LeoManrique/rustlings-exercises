@@ -14,3 +14,9 @@ fn main() {
 After cloning, both bindings own independent allocations and both remain valid. This is the way to keep an original value usable while still handing a value of the same type off to code that will consume it.
 
 When you see a call to `clone`, you know that some arbitrary code is being executed and that code may be expensive.
+
+---
+
+**References**
+
+[1] The Rust Programming Language — [What Is Ownership?](https://doc.rust-lang.org/book/ch04-01-what-is-ownership.html)

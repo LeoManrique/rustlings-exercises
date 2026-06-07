@@ -21,3 +21,11 @@ while let Some(i) = optional {
 ```
 
 You can do nested pattern matching in `if let` and `while let` statements, which is useful when a value such as `Vec::pop()` adds another layer of `Option`.
+
+---
+
+**References**
+
+[1] Rust by Example — [if let](https://doc.rust-lang.org/rust-by-example/flow_control/if_let.html)
+
+[2] Rust by Example — [while let](https://doc.rust-lang.org/rust-by-example/flow_control/while_let.html)

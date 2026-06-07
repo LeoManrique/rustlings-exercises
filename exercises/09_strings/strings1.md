@@ -15,3 +15,9 @@ let s = String::from("initial contents");
 ```
 
 Both methods are equivalent; choice is a matter of style.
+
+---
+
+**References**
+
+[1] The Rust Programming Language — [Storing UTF-8 Encoded Text with Strings](https://doc.rust-lang.org/book/ch08-02-strings.html)

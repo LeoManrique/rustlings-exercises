@@ -9,3 +9,24 @@ scope.
 
 The relevant attribute is `#[macro_export]`, placed directly above the
 `macro_rules!` definition.
+
+```rust
+mod my_module {
+    #[macro_export]
+    macro_rules! my_macro {
+        () => {
+            println!("Check out my macro!");
+        };
+    }
+}
+
+fn main() {
+    my_macro!();
+}
+```
+
+---
+
+**References**
+
+[1] The Rust Programming Language — [Macros](https://doc.rust-lang.org/book/ch20-05-macros.html)

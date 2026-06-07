@@ -27,3 +27,9 @@ lifetime `'a`, the function takes two string slices that live at least
 as long as `'a` and returns a string slice that will live at least as
 long as `'a`. The lifetime of the returned reference equals the smaller
 of the lifetimes of the input arguments.
+
+---
+
+**References**
+
+[1] The Rust Programming Language — [Validating References with Lifetimes](https://doc.rust-lang.org/book/ch10-03-lifetime-syntax.html)

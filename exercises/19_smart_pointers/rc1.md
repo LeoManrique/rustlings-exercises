@@ -11,3 +11,21 @@ Every time we call `Rc::clone`, the reference count to the data within the `Rc<T
 When we create a value with `Rc::new`, the count starts at 1; each call to `clone` increases it by 1. We don't have to call a function to decrease the reference count: The implementation of the `Drop` trait decreases the reference count automatically when an `Rc<T>` value goes out of scope. The current count can be observed with `Rc::strong_count`.
 
 Note that `Rc<T>` is only for use in single-threaded scenarios.
+
+```rust
+use std::rc::Rc;
+
+let a = Rc::new(5);
+let b = Rc::clone(&a);
+let c = Rc::clone(&a);
+
+println!("count after creating a = {}", Rc::strong_count(&a)); // 3
+drop(c);
+println!("count after dropping c = {}", Rc::strong_count(&a)); // 2
+```
+
+---
+
+**References**
+
+[1] The Rust Programming Language — [Rc, the Reference Counted Smart Pointer](https://doc.rust-lang.org/book/ch15-04-rc.html)

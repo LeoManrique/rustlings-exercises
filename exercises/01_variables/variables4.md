@@ -16,3 +16,9 @@ x = 6;
 ```
 
 Adding `mut` also conveys intent to future readers of the code by indicating that other parts of the code will be changing this variable's value.
+
+---
+
+**References**
+
+[1] The Rust Programming Language — [Variables and Mutability](https://doc.rust-lang.org/book/ch03-01-variables-and-mutability.html)

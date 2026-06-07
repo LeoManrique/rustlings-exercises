@@ -23,3 +23,9 @@ fn read_username_from_file() -> Result<String, io::Error> {
 The return type indicates the function returns either a success value or an error on failure. If the function encounters any problems, the calling code will receive an `Err` value with more information about what went wrong.
 
 There are at least two ways to write this propagation that are both correct — one is a lot shorter.
+
+---
+
+**References**
+
+[1] The Rust Programming Language — [Recoverable Errors with Result](https://doc.rust-lang.org/book/ch09-02-recoverable-errors-with-result.html)

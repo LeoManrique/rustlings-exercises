@@ -12,4 +12,27 @@ The `#[cfg(test)]` attribute on the module indicates that this code should only 
 
 The `tests` module is an inner module that follows normal visibility rules, so you need an import like `use super::*;` to access the code you're testing.
 
-The `assert!` macro ensures that some condition in a test evaluates to `true`. If the value is `true`, nothing happens and the test passes. If the value is `false`, the macro calls `panic!` to cause the test to fail.
+```rust
+pub fn add(left: u64, right: u64) -> u64 {
+    left + right
+}
+
+#[cfg(test)]
+mod tests {
+    use super::*;
+
+    #[test]
+    fn it_works() {
+        let result = add(2, 2);
+        assert_eq!(result, 4);
+    }
+}
+```
+
+The `assert!` macro ensures that some condition in a test evaluates to `true`. If the value is `true`, nothing happens and the test passes. If the value is `false`, the macro calls `panic!` to cause the test to fail. `assert_eq!` and `assert_ne!` test equality and inequality respectively, and print both values on failure to make debugging easier.
+
+---
+
+**References**
+
+[1] The Rust Programming Language — [How to Write Tests](https://doc.rust-lang.org/book/ch11-01-writing-tests.html)

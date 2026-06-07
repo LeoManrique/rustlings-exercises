@@ -16,4 +16,8 @@ With `impl Trait`, you can have two parameters implement the same trait with pot
 pub fn notify(item1: &impl Summary, item2: &impl Summary) {
 ```
 
-Source: <https://doc.rust-lang.org/book/ch10-02-traits.html>
+---
+
+**References**
+
+[1] The Rust Programming Language — [Traits: Defining Shared Behavior](https://doc.rust-lang.org/book/ch10-02-traits.html)

@@ -21,3 +21,9 @@ let doubled: Vec<i32> = a.iter().map(|x| 2 * x).collect();
 
 If you're doing some sort of looping for a side effect, it's considered more
 idiomatic to use `for` than `map()`.
+
+---
+
+**References**
+
+[1] The Rust Standard Library — [Iterator::map](https://doc.rust-lang.org/std/iter/trait.Iterator.html#method.map)

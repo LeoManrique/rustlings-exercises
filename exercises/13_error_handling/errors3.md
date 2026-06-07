@@ -27,3 +27,9 @@ fn main() -> Result<(), Box<dyn Error>> {
 ```
 
 When a `main` function returns a `Result<(), E>`, the executable will exit with a value of `0` if `main` returns `Ok(())` and will exit with a nonzero value if `main` returns an `Err` value.
+
+---
+
+**References**
+
+[1] The Rust Programming Language — [Recoverable Errors with Result](https://doc.rust-lang.org/book/ch09-02-recoverable-errors-with-result.html)

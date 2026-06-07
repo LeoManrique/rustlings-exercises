@@ -16,4 +16,8 @@ impl Summary for NewsArticle {
 
 Within the `impl` block, use curly brackets and fill in the method body with the specific behavior desired for that particular type.
 
-Source: <https://doc.rust-lang.org/book/ch10-02-traits.html>
+---
+
+**References**
+
+[1] The Rust Programming Language — [Traits: Defining Shared Behavior](https://doc.rust-lang.org/book/ch10-02-traits.html)

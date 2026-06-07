@@ -18,4 +18,8 @@ pub fn notify<T: Summary + Display>(item: &T) {
 
 With both trait bounds, the function body can call methods from either trait on the parameter.
 
-Source: <https://doc.rust-lang.org/book/ch10-02-traits.html>
+---
+
+**References**
+
+[1] The Rust Programming Language — [Traits: Defining Shared Behavior](https://doc.rust-lang.org/book/ch10-02-traits.html)

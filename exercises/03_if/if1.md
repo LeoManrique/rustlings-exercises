@@ -8,4 +8,20 @@ Optionally, we can also include an `else` expression, which gives the program an
 
 It's worth noting that the condition in this code *must* be a `bool`. If the condition isn't a `bool`, we'll get an error. Unlike languages such as Ruby and JavaScript, Rust will not automatically try to convert non-Boolean types to a Boolean. You must be explicit and always provide `if` with a Boolean as its condition.
 
+```rust
+let number = 3;
+
+if number < 5 {
+    println!("condition was true");
+} else {
+    println!("condition was false");
+}
+```
+
 Because `if` is an expression, the block evaluates to the value of its last expression, which lets the whole `if`/`else` be returned directly from a function.
+
+---
+
+**References**
+
+[1] The Rust Programming Language — [Control Flow: if Expressions](https://doc.rust-lang.org/book/ch03-05-control-flow.html#if-expressions)

@@ -14,3 +14,9 @@ enum ParsePosNonzeroError {
 ```
 
 Each variant carries the original error inside it, so no information is lost on the way up.
+
+---
+
+**References**
+
+[1] The Rust Programming Language — [Recoverable Errors with Result](https://doc.rust-lang.org/book/ch09-02-recoverable-errors-with-result.html)

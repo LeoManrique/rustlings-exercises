@@ -16,3 +16,9 @@ $ rustc hello.rs
 $ ./hello
 Hello World!
 ```
+
+---
+
+**References**
+
+[1] Rust by Example — [Hello World](https://doc.rust-lang.org/rust-by-example/hello.html)

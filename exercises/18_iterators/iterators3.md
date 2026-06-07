@@ -15,3 +15,9 @@ let ys: Vec<Result<_, _>> = iter_of_results.collect();
 ```
 
 The turbofish (`collect::<Result<Vec<_>, _>>()`) is an alternative way to tell `collect` which collection to build when the binding's type isn't explicit.
+
+---
+
+**References**
+
+[1] The Rust Standard Library — [Iterator::collect](https://doc.rust-lang.org/std/iter/trait.Iterator.html#method.collect)

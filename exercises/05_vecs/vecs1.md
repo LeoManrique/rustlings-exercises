@@ -20,3 +20,9 @@ let v = vec![1, 2, 3];
 Because initial `i32` values are provided, Rust infers that `v` is `Vec<i32>`,
 so the type annotation isn't necessary. The integer type defaults to `i32`
 unless otherwise specified.
+
+---
+
+**References**
+
+[1] The Rust Programming Language — [Storing Lists of Values with Vectors](https://doc.rust-lang.org/book/ch08-01-vectors.html)

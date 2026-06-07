@@ -19,3 +19,9 @@ let spaces = spaces.len();
 ```
 
 The first `spaces` variable is a string type, and the second `spaces` variable is a number type. Shadowing thus spares us from having to come up with different names. With `mut`, by contrast, the compiler would reject changing the type, reporting "mismatched types".
+
+---
+
+**References**
+
+[1] The Rust Programming Language — [Variables and Mutability](https://doc.rust-lang.org/book/ch03-01-variables-and-mutability.html)

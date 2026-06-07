@@ -13,4 +13,8 @@ enum IpAddrKind {
 
 We can create instances of each variant by using the `::` syntax. Note that the variants of the enum are namespaced under its identifier, and we use a double colon to separate the two. This is useful because now both values `IpAddrKind::V4` and `IpAddrKind::V6` are of the same type: `IpAddrKind`.
 
-Source: <https://doc.rust-lang.org/book/ch06-01-defining-an-enum.html>
+---
+
+**References**
+
+[1] The Rust Programming Language — [Defining an Enum](https://doc.rust-lang.org/book/ch06-01-defining-an-enum.html)

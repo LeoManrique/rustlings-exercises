@@ -12,3 +12,25 @@ matching different shapes of input. Arms in a `macro_rules!` body are
 written one after the other, and each arm (pattern `=>` body) must be
 terminated by `;` so the parser can tell where one ends and the next
 begins.
+
+```rust
+macro_rules! my_macro {
+    () => {
+        println!("Check out my macro!");
+    };
+    ($val:expr) => {
+        println!("Look at this value: {}", $val);
+    };
+}
+
+fn main() {
+    my_macro!();
+    my_macro!(7777);
+}
+```
+
+---
+
+**References**
+
+[1] The Rust Programming Language — [Macros](https://doc.rust-lang.org/book/ch20-05-macros.html)

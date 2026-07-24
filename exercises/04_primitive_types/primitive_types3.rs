@@ -1,6 +1,14 @@
 fn main() {
     // TODO: Create an array called `a` with at least 100 elements in it.
-    // let a = ???
+    let a = [[1, 2, 3]; 200];
+    for i in a {
+        print!("[");
+        for j in i {
+            print!("{{{j}}}");
+        }
+        println!("]");
+    }
+    println!();
 
     if a.len() >= 100 {
         println!("Wow, that's a big array!");
